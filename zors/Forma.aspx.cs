@@ -50,7 +50,9 @@ namespace zors
                 labelmsm.Text = employee.Message;
             }
 
-
+            LabelIme.Text = employee.EmployeeName;
+            LabelMBR.Text = employee.EmployeeMbr;
+            //nastavi
 
 
             //if (TextBox3.Text != "")
