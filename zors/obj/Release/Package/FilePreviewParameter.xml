@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Default Web Site/zors" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\DATA\\pet6226\\Documents\\Visual\ Studio\ 2013\\Projects\\zors_12\\zors\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\DATA\\pet6226\\Documents\\Visual\ Studio\ 2013\\Projects\\zors_12\\zors\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="ActiveDirectoryConnectionString-Web.config Connection String" description="" value="LDAP://zelsd.rs" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\DATA\\pet6226\\Documents\\Visual\ Studio\ 2013\\Projects\\zors_12\\zors\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ActiveDirectoryConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="ConnectionString-Web.config Connection String" description="" value="DATA SOURCE=BREZATST;PASSWORD=dosadan12;USER ID=USS_OBUKA;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\DATA\\pet6226\\Documents\\Visual\ Studio\ 2013\\Projects\\zors_12\\zors\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="ConnectionString1-Web.config Connection String" description="" value="Data Source=webpage;User ID=PREKOVREMENI;Password= grnije11$;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\DATA\\pet6226\\Documents\\Visual\ Studio\ 2013\\Projects\\zors_12\\zors\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConnectionString1']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=(LocalDb)\v11.0;Initial Catalog=aspnet-zors-20181205145135;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\aspnet-zors-20181205145135.mdf" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\DATA\\pet6226\\Documents\\Visual\ Studio\ 2013\\Projects\\zors_12\\zors\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="ConnectionStringUSSKAD-Web.config Connection String" description="ConnectionStringUSSKAD Connection String used in web.config by the application to access the database." value="Data Source=prhrbqat;User ID=USS_KAD;Password=dosadan12;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\DATA\\pet6226\\Documents\\Visual\ Studio\ 2013\\Projects\\zors_12\\zors\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConnectionStringUSSKAD']/@connectionString" />
+  </parameter>
+  <parameter name="ConnectionStringZORS-Web.config Connection String" description="ConnectionStringZORS Connection String used in web.config by the application to access the database." value="Data Source=webdev;User ID=ZORS;Password=Zoro026;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\DATA\\pet6226\\Documents\\Visual\ Studio\ 2013\\Projects\\zors_12\\zors\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConnectionStringZORS']/@connectionString" />
+  </parameter>
+</parameters>
