@@ -49,10 +49,12 @@ namespace zors
                 labelmsm.Visible = true;
                 labelmsm.Text = employee.Message;
             }
-
-            LabelIme.Text = employee.EmployeeName;
-            LabelMBR.Text = employee.EmployeeMbr;
-            //nastavi
+            else
+            {
+                LabelIme.Text = employee.EmployeeName;
+                LabelMBR.Text = employee.EmployeeMbr;
+                //nastavi
+            }
 
 
             //if (TextBox3.Text != "")
