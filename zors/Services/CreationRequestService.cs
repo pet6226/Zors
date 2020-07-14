@@ -29,7 +29,7 @@ namespace zors.Services
                 {
                     return new EmployeeNotExist
                     {
-                        Message = "*Ne postoji korisnik sa tim maticnim brojem"
+                        Message = "*Ne postoji korisnik sa tim maticnim br."
                     };
                 }
                 if (employees.Count == 1)
