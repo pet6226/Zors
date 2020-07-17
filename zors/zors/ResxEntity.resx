@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="eventLog1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="performanceCounter1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 17</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.TrayLargeIcon" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="String01" xml:space="preserve">
+    <value>"select ime, mbr, zanimanje, zanimanjeen, strucnasprema, celina, nazivcel, nazivcelineeng, nazivposla, nazivposlaeng, kodposla, koefzarade, mbrdir, OBRAZOVANJE, MESTOSTUDIRANJA, SMERODSEK, PROSECNAOCENA, OCENADIPLOMSKI, NAPOMENA, DATUMDIPLOMIRANJA from ECR1 where MBR = '" + this.TextBox3.Text + "'"</value>
+    <comment>Button1Click</comment>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>select MBR_GM from prekovremeni_sasa@citacbreza.zelsd.rs where MATICNI_BROJ = '" + mb + "'"</value>
+    <comment>PronadjiSadasnjegGMMBR</comment>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>select BRSATI from MESECGODINA where MMGG = (SELECT trunc(sysdate) - (to_number(to_char(sysdate,'DD')) - 1) FROM dual)"</value>
+    <comment>Pronadjibrojradnihsati</comment>
+  </data>
+  <data name="String02" xml:space="preserve">
+    <value>"select ime from ECR1 where MBR = '" + mb + "'"</value>
+    <comment>VratiIme</comment>
+  </data>
+  <data name="String03" xml:space="preserve">
+    <value>"select IME_NADREDJENOG, PREZIME_NADREDJENOG from prekovremeni_sasa@citacbreza.zelsd.rs where MATICNI_BROJ = '" + mb + "'"</value>
+    <comment>nadjIMEizvrsnogdirektora</comment>
+  </data>
+  <data name="String04" xml:space="preserve">
+    <value>"select MATICNI_BROJ_NADREDJENOG from prekovremeni_sasa@citacbreza.zelsd.rs where MATICNI_BROJ = '" + mb + "'"</value>
+    <comment>nadjiMBizvrsnogdirektora</comment>
+  </data>
+  <data name="String05" xml:space="preserve">
+    <value>"select nazivceline, nazivengceline, navivposla, kodposla, engnazivposla, sss, sifra_dir, sifra_gm from ecr2 where kodposla = '" + this.TextBox5.Text + "'"</value>
+    <comment>Button2Click</comment>
+  </data>
+  <data name="String06" xml:space="preserve">
+    <value>"INSERT INTO ZORS_MAIN (MBR_PODNOSIOCA, IME_PODNOSIOCA, MBR, IME, SKOLA, SKOLA_EN, STRUCNA_SPREMA, SADASNJA_CELINA, SADASNJA_CELINA_EN, SIFRA_CELINE, SADASNJI_POSAO, SADASNJI_POSAO_EN, KOD_POSLA_SADASNJI, KOEF_SADASNJI, NOVA_ORG_CELINA, NOVA_ORG_CELINA_ENG, NOVI_POSAO, NOVI_POSAO_ENG, KOD_POSLA_NOVI, QUAL_LEVEL_NOVOGPOSLA, KOEF_NOVI, RAZLOG_PODNOSENJA, REZIM_RADA, POCETAK_SMENE, OBRAZLOZENJE, MB_DIR_SADASNJECELINE, IME_DIR_SADASNJECELINE, MB_DIR_BUDUCECELINE, IME_DIR_BUDUCECELINE, MB_GM_BUDUCECELINE, IME_GM_BUDUCECELINE, MB_IZVRSNIDIR, IME_IZVRSNIDIR, MB_POMOCNIKGENERALNOG, MB_GENERALNI, DATUM_SYS, DATUM_PODNOSENJA, MB_GM_SADASNJECELINE, IME_GM_SADASNJECELINE, OBRAZOVANJE, SMERODSEK, MESTOSTUDIRANJA, PROSECNAOCENA, OCENADIPLOMSKI, NAPOMENA, DATUMDIPLOMIRANJA) VALUES (:MBR_PODNOSIOCA, :IME_PODNOSIOCA, :MBR, :IME, :SKOLA, :SKOLA_EN, :STRUCNA_SPREMA, :SADASNJA_CELINA, :SADASNJA_CELINA_EN, :SIFRA_CELINE, :SADASNJI_POSAO, :SADASNJI_POSAO_EN, :KOD_POSLA_SADASNJI, :KOEF_SADASNJI, :NOVA_ORG_CELINA, :NOVA_ORG_CELINA_ENG, :NOVI_POSAO, :NOVI_POSAO_ENG, :KOD_POSLA_NOVI, :QUAL_LEVEL_NOVOGPOSLA, :KOEF_NOVI, :RAZLOG_PODNOSENJA, :REZIM_RADA, :POCETAK_SMENE, :OBRAZLOZENJE, :MB_DIR_SADASNJECELINE, :IME_DIR_SADASNJECELINE, :MB_DIR_BUDUCECELINE, :IME_DIR_BUDUCECELINE, :MB_GM_BUDUCECELINE, :IME_GM_BUDUCECELINE, :MB_IZVRSNIDIR, :IME_IZVRSNIDIR, :MB_POMOCNIKGENERALNOG, :MB_GENERALNI, :DATUM_SYS, :DATUM_PODNOSENJA, :MB_GM_SADASNJECELINE, :IME_GM_SADASNJECELINE, :OBRAZOVANJE, :SMERODSEK, :MESTOSTUDIRANJA, :PROSECNAOCENA, :OCENADIPLOMSKI, :NAPOMENA, :DATUMDIPLOMIRANJA)"</value>
+    <comment>UpisiUbazu</comment>
+  </data>
+  <data name="String07" xml:space="preserve">
+    <value>"select EMAIL from prekovremeni_sasa@citacbreza.zelsd.rs where MATICNI_BROJ = '" + mb + "'"</value>
+    <comment>PronadjiMEJLDirektora1</comment>
+  </data>
+  <data name="String08" xml:space="preserve">
+    <value>"select distinct KOEFZARADE from ECR1 where kodposla = '" + kodposlanovi + "' order by KOEFZARADE desc"</value>
+    <comment>loadDDList3</comment>
+  </data>
+  <data name="String09" xml:space="preserve">
+    <value>select GM_IME, GM_PREZIME from prekovremeni_sasa@citacbreza.zelsd.rs where MATICNI_BROJ = '" + mb + "'"</value>
+    <comment>PronadjiSadasnjegGMime</comment>
+  </data>
+</root>
