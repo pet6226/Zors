@@ -54,6 +54,8 @@ namespace zors
                 LabelIme.Text = employee.EmployeeName;
                 LabelMBR.Text = employee.EmployeeMbr;
                 //nastavi
+                //***************************
+
             }
 
 
