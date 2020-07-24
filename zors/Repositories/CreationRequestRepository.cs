@@ -19,7 +19,8 @@ namespace zors.Repositories
             DataSet results;
             connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ConnectionStringUSSKAD"].ConnectionString;
             connection.Open();
-            comm = new OracleCommand("select ime, mbr, zanimanje, zanimanjeen, strucnasprema, celina, nazivcel, nazivcelineeng, nazivposla, nazivposlaeng, kodposla, koefzarade, mbrdir from ECR1 where MBR = '" + this.TextBox3.Text + "'");
+            comm = new OracleCommand("select ime, mbr, OBRAZOVANJE, zanimanje, strucnasprema, SMERODSEK, MESTOSTUDIRANJA, DATUMDIPLOMIRANJA, PROSECNAOCENA, OCENADIPLOMSKI, NAPOMENA, kodposla, koefzarade  from ECR1 where MBR = '" + this.TextBox3.Text + "'");
+
             comm.Connection = connection;
             adapter = new OracleDataAdapter(comm);
             results = new DataSet();
@@ -30,9 +31,22 @@ namespace zors.Repositories
             {
                 Employee employee = new Employee
                 {
-                    EmployeeMbr = Convert.ToString(read[1]),
-                    EmployeeSchool = Convert.ToString(read[2])
+                    //EmployeeMbr = Convert.ToString(read[1]),
+                    //EmployeeSchool = Convert.ToString(read[2]),
                     //nastavi
+                    EmployeeName = Convert.ToString(read[0]),
+                    EmployeeMbr = Convert.ToString(read[1]),
+                    EmployeeSchool = Convert.ToString(read[2]),
+                    EmployeeProfessionalQualification = Convert.ToString(read[3]),
+                    EmployeeEducation = Convert.ToString(read[4]),
+                    EmployeeEducationSection = Convert.ToString(read[5]),
+                    EmployeeEducationCityPlace = Convert.ToString(read[6]),
+                    EmployeeEducationDate = Convert.ToString(read[7]),
+                    EmployeeEducationAverageMark = Convert.ToString(read[8]),
+                    EmployeeEducationAverageGraduateMark = Convert.ToString(read[9]),
+                    EmployeeEducationReference = Convert.ToString(read[10]),
+                    EmployeeCurrentDepartmentID = Convert.ToString(read[11]),
+                    EmployeeCurrentCoefficient = Convert.ToString(read[12])
                 };
 
                 employees.Add(employee);
@@ -41,6 +55,53 @@ namespace zors.Repositories
 
             return employees;
         }
+        
+
+        public List<Organization> SelectOrganizationByMbr(OracleConnection connection, string mbr)
+        {
+            List<Organization> organizations = new List<Organization>();
+
+            OracleCommand comm;
+            OracleDataAdapter adapter;
+            DataSet results;
+            connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ConnectionStringUSSKAD"].ConnectionString;
+            connection.Open();
+            comm = new OracleCommand("select nazivcel, nazivcelineeng, nazivposla, nazivposlaeng, kodposla  from ECR1 where MBR = '" + this.TextBox3.Text + "'");
+      
+            comm.Connection = connection;
+            adapter = new OracleDataAdapter(comm);
+            results = new DataSet();
+            adapter.Fill(results);
+            OracleDataReader read = comm.ExecuteReader();
+            int n = 0;
+            while (read.Read())
+            {
+                Organization organization = new Organization
+                {
+                    OrganisationDepartmentNameSer = Convert.ToString(read[0]),
+                    OrganisationDepartmentNameEng = Convert.ToString(read[1]),
+                    JobNameSer = Convert.ToString(read[2]),
+                    JobNameEng = Convert.ToString(read[3]),
+                    JobID = Convert.ToString(read[4])                    
+                };
+
+                organizations.Add(organization);
+            }
+            connection.Close();
+
+            return organizations;
+        }
+
+        List<Employee> ICreationRequestRepository.SelectEmployeesByMbr(OracleConnection connection, string mbr)
+        {
+            throw new NotImplementedException();
+        }
+
+        List<Organization> ICreationRequestRepository.SelectOrganiyationByMbr(OracleConnection connection, string mbr)
+        {
+            throw new NotImplementedException();
+        }
+    }
         protected void Button1_Click(object sender, EventArgs e)
         {
             if (TextBox3.Text != "")

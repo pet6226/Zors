@@ -54,9 +54,21 @@ namespace zors
                 LabelIme.Text = employee.EmployeeName;
                 LabelMBR.Text = employee.EmployeeMbr;
                 //nastavi
-                //***************************
+                LabelSkola.Text = employee.EmployeeSchool;
+                LabelObrazovanje.Text = employee.EmployeeProfessionalQualification;
+                LabelStrucnaSprema.Text = employee.EmployeeEducation;
+                LabelSmerOdsek.Text = employee.EmployeeEducationSection;
+                LabelMestoStudiranja.Text = employee.EmployeeEducationCityPlace;
+                LabelDatumDiplomiranja.Text = employee.EmployeeEducationDate;
+                LabelProsecnaOcena.Text = employee.EmployeeEducationAverageMark;
+                LabelOcenaDiplomski.Text = employee.EmployeeEducationAverageGraduateMark;
+                LabelNapomena.Text = employee.EmployeeEducationReference;
+                LabelSadasnjaCelina.Text = employee.EmployeeCurrentDepartmentID;               
+                LabelSadasnjiKoef.Text = employee.EmployeeCurrentCoefficient;
 
             }
+
+
 
 
             //if (TextBox3.Text != "")

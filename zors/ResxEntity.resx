@@ -129,11 +129,11 @@
     <value>False</value>
   </data>
   <data name="String01" xml:space="preserve">
-    <value>"select ime, mbr, zanimanje, zanimanjeen, strucnasprema, celina, nazivcel, nazivcelineeng, nazivposla, nazivposlaeng, kodposla, koefzarade, mbrdir, OBRAZOVANJE, MESTOSTUDIRANJA, SMERODSEK, PROSECNAOCENA, OCENADIPLOMSKI, NAPOMENA, DATUMDIPLOMIRANJA from ECR1 where MBR = '" + this.TextBox3.Text + "'"</value>
+    <value>"select ime, mbr, zanimanje, zanimanjeen, strucnasprema, celina, nazivcel, nazivcelineeng, nazivposla, nazivposlaeng, kodposla, koefzarade, mbrdir from ECR1 where MBR = @mbr"</value>
     <comment>Button1Click</comment>
   </data>
   <data name="String10" xml:space="preserve">
-    <value>select MBR_GM from prekovremeni_sasa@citacbreza.zelsd.rs where MATICNI_BROJ = '" + mb + "'"</value>
+    <value>select MBR_GM from prekovremeni_sasa@citacbreza.zelsd.rs where MATICNI_BROJ = @mbr"</value>
     <comment>PronadjiSadasnjegGMMBR</comment>
   </data>
   <data name="String11" xml:space="preserve">
@@ -141,19 +141,19 @@
     <comment>Pronadjibrojradnihsati</comment>
   </data>
   <data name="String02" xml:space="preserve">
-    <value>"select ime from ECR1 where MBR = '" + mb + "'"</value>
+    <value>"select ime from ECR1 where MBR = @mbr"</value>
     <comment>VratiIme</comment>
   </data>
   <data name="String03" xml:space="preserve">
-    <value>"select IME_NADREDJENOG, PREZIME_NADREDJENOG from prekovremeni_sasa@citacbreza.zelsd.rs where MATICNI_BROJ = '" + mb + "'"</value>
+    <value>"select IME_NADREDJENOG, PREZIME_NADREDJENOG from prekovremeni_sasa@citacbreza.zelsd.rs where MATICNI_BROJ = @mbr"</value>
     <comment>nadjIMEizvrsnogdirektora</comment>
   </data>
   <data name="String04" xml:space="preserve">
-    <value>"select MATICNI_BROJ_NADREDJENOG from prekovremeni_sasa@citacbreza.zelsd.rs where MATICNI_BROJ = '" + mb + "'"</value>
+    <value>"select MATICNI_BROJ_NADREDJENOG from prekovremeni_sasa@citacbreza.zelsd.rs where MATICNI_BROJ = @mbr"</value>
     <comment>nadjiMBizvrsnogdirektora</comment>
   </data>
   <data name="String05" xml:space="preserve">
-    <value>"select nazivceline, nazivengceline, navivposla, kodposla, engnazivposla, sss, sifra_dir, sifra_gm from ecr2 where kodposla = '" + this.TextBox5.Text + "'"</value>
+    <value>"select nazivceline, nazivengceline, navivposla, kodposla, engnazivposla, sss, sifra_dir, sifra_gm from ecr2 where kodposla = @newjobid"</value>
     <comment>Button2Click</comment>
   </data>
   <data name="String06" xml:space="preserve">
@@ -161,15 +161,15 @@
     <comment>UpisiUbazu</comment>
   </data>
   <data name="String07" xml:space="preserve">
-    <value>"select EMAIL from prekovremeni_sasa@citacbreza.zelsd.rs where MATICNI_BROJ = '" + mb + "'"</value>
+    <value>"select EMAIL from prekovremeni_sasa@citacbreza.zelsd.rs where MATICNI_BROJ = @mbr"</value>
     <comment>PronadjiMEJLDirektora1</comment>
   </data>
   <data name="String08" xml:space="preserve">
-    <value>"select distinct KOEFZARADE from ECR1 where kodposla = '" + kodposlanovi + "' order by KOEFZARADE desc"</value>
+    <value>"select distinct KOEFZARADE from ECR1 where kodposla = @newjobid order by KOEFZARADE desc"</value>
     <comment>loadDDList3</comment>
   </data>
   <data name="String09" xml:space="preserve">
-    <value>select GM_IME, GM_PREZIME from prekovremeni_sasa@citacbreza.zelsd.rs where MATICNI_BROJ = '" + mb + "'"</value>
+    <value>select GM_IME, GM_PREZIME from prekovremeni_sasa@citacbreza.zelsd.rs where MATICNI_BROJ = @mbr"</value>
     <comment>PronadjiSadasnjegGMime</comment>
   </data>
 </root>

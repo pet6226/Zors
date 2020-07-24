@@ -1224,3 +1224,10 @@ C:\Users\Korisnik\Desktop\zors_27\zors\obj\Release\zors.ResxEntity.resources
 C:\Users\Korisnik\Desktop\zors_27\zors\obj\Release\zors.csproj.GenerateResource.Cache
 C:\Users\Korisnik\Desktop\zors_27\zors\obj\Release\zors.dll
 C:\Users\Korisnik\Desktop\zors_27\zors\obj\Release\zors.pdb
+C:\Users\Korisnik\Desktop\PR001\Zors\zors\obj\Release\zors.csproj.App.config
+C:\Users\Korisnik\Desktop\PR001\Zors\zors\obj\Release\zors.csprojResolveAssemblyReference.cache
+C:\Users\Korisnik\Desktop\PR001\Zors\zors\obj\Release\zors.ResxOrganization.resources
+C:\Users\Korisnik\Desktop\PR001\Zors\zors\obj\Release\zors.ResxEntity.resources
+C:\Users\Korisnik\Desktop\PR001\Zors\zors\obj\Release\zors.csproj.GenerateResource.Cache
+C:\Users\Korisnik\Desktop\PR001\Zors\zors\obj\Release\zors.dll
+C:\Users\Korisnik\Desktop\PR001\Zors\zors\obj\Release\zors.pdb
